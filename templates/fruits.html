@@ -22,11 +22,22 @@
       <main role="main">
   
         <section class="jumbotron text-center">
-          <div class="container">
+          <div class="container justify-content-center">
             <h1 class="jumbotron-heading">Dojo Fruits</h1>
-            <p>Please figure out how to display the images here...</p>
-
-            <p>
+            <table class="table table-bordered table-primary text-center my-5">
+              <thead class>
+                <th class="col-1">Strawberries</th>
+                <th class="col-1">Raspbarries</th>
+                <th class="col-1">Blackberries</th>
+                <th class="col-1">Apples</th>
+              </thead>
+              <tbody class="table-light">
+                <td class="align-middle"><img src="{{ url_for('static', filename='img/strawberry.png')}}" class="w-50 my-2"></td>
+                <td class="align-middle"><img src="{{ url_for('static', filename='img/raspberry.png')}}" class="w-50 my-2"></td>
+                <td class="align-middle"><img src="{{ url_for('static', filename='img/blackberry.png')}}" class="w-50 my-2"></td>
+                <td class="align-middle"><img src="{{ url_for('static', filename='img/apple.png')}}" class="w-50 my-2"></td>
+              </tbody>
+            </table>
               <a href="/" class="btn btn-primary my-2">Go back</a>
             </p>
           </div>
